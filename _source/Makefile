@@ -31,7 +31,9 @@ $(ARTICLES_DIR)/%.docx: %.md
 	pandoc $< -o $@
 
 $(ARTICLES_DIR)/%-plain.html: %.md
-	pandoc --smart --ascii --base-header-level=1 $< -o $@
+	pandoc -s --smart --ascii --base-header-level=2 \
+       --template=templates/article-plain.html \
+       $< -o $@
 
 $(ARTICLES_DIR)/%.md: %.md
 	cp $< $@
