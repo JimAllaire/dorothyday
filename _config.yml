@@ -7,4 +7,7 @@ baseurl: /
 auto: true
 server: true
 
+exclude: Makefile
+
+
 
