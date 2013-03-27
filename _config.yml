@@ -1,0 +1,9 @@
+name: Dorothy Day Archive
+description: Collection of Dorothy Day's writings
+
+url: http://dorothyday.catholicworker.org
+
+auto: true
+server: true
+
+
