@@ -1,7 +1,7 @@
 name: Dorothy Day Archive
 description: Collection of Dorothy Day's writings
 
-baseurl: /dorothyday/
+baseurl: /
 
 auto: true
 server: true
