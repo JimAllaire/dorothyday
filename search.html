@@ -3,4 +3,20 @@ layout: layout
 title: Dorothy Day Archive - Search
 ---
 
-<h2>[Under construction]</h2>
+<script>
+
+function doDocIdLookup() {
+	docId = document.getElementById('docId').value;
+	console.log(docId);
+	docUrl = "articles/" + docId + ".html";
+    window.location = docUrl;
+}
+</script>
+
+<input type="text" id="docId" onkeydown="if (event.keyCode==13) document.getElementById('btnDocId').click();"></input>
+<input type="button" id="btnDocId" value="Go" onClick="doDocIdLookup();"/>
+
+
+
+
+
