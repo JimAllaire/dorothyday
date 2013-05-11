@@ -17,6 +17,20 @@ function doDocIdLookup() {
 <input type="button" id="btnDocId" value="Go" onClick="doDocIdLookup();"/>
 
 
+<h3>Google Custom Search</h3>
+
+<script>
+  (function() {
+    var cx = '008048328386038300274:WMX1197477301';
+    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+
 
 
 
