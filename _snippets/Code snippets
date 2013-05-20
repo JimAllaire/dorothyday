@@ -7,3 +7,12 @@
 Button link:
 
 <p><a class="btn" href="about.html">Terms of Use »</a></p>
+
+
+
+<dl>
+  <dt>Coffee</dt>
+    <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+    <dd>White cold drink</dd>
+</dl
