@@ -2,7 +2,7 @@ ARTICLES_DIR = ../articles
 HTML_FILES := $(patsubst %.md, $(ARTICLES_DIR)/%.html ,$(wildcard *.md)) 
 PDF_FILES := $(patsubst %.md, $(ARTICLES_DIR)/%.pdf ,$(wildcard *.md))
 WORD_FILES := $(patsubst %.md, $(ARTICLES_DIR)/%.docx ,$(wildcard *.md)) 
-PLAIN_HTML_FILES := $(patsubst %.md, $(ARTICLES_DIR)/%-plain.html ,$(wildcard *.md)) 
+PLAIN_HTML_FILES := $(patsubst %.md, $(ARTICLES_DIR)/%-plain.htm ,$(wildcard *.md)) 
 MARKDOWN_FILES := $(patsubst %.md, $(ARTICLES_DIR)/%.md ,$(wildcard *.md)) 
 
 
@@ -30,7 +30,7 @@ $(ARTICLES_DIR)/%.pdf: %.md
 $(ARTICLES_DIR)/%.docx: %.md
 	pandoc $< -o $@
 
-$(ARTICLES_DIR)/%-plain.html: %.md
+$(ARTICLES_DIR)/%-plain.htm: %.md
 	pandoc -s --smart --ascii --base-header-level=2 \
        --template=templates/article-plain.html \
        $< -o $@
