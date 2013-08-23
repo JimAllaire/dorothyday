@@ -1,0 +1,11 @@
+
+User-agent: *
+Disallow: /about.html
+Disallow: /help.html
+Disallow: /browse/
+Disallow: /themes/
+Disallow: /articles/*.pdf
+Disallow: /articles/*.md
+Disallow: /articles/*-plain.htm
+
+Sitemap: http://dorothyday.catholicworker.org/sitemap.xml
