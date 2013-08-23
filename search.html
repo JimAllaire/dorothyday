@@ -2,28 +2,44 @@
 layout: layout
 title: Dorothy Day Archive - Search
 ---
+
+<style type="text/css">
+# custom style for highlighted terms (if desired)
+.st-snippet em {
+	
+}
+</style>
+
 <a name="Top"></a>
 
 <div class="row">
 	<div class="span8">
 		<h3>Custom Search</h3>
 		
-		<script>
-  			(function() {
-	    		var cx = '003241679836417614596:WMX1197477301';
-	    		var gcse = document.createElement('script');
-	    		gcse.type = 'text/javascript';
-	    		gcse.async = true;
-	    		gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-	        		'//www.google.com/cse/cse.js?cx=' + cx;
-	    		var s = document.getElementsByTagName('script')[0];
-	    		s.parentNode.insertBefore(gcse, s);
-  			})();
-		</script>
+		<form>
+		  <input type="text" id="st-search-input" class="st-search-input" />
+		</form>
+		<div id="st-results-container"></div>
+		<script type="text/javascript">
+		  var Swiftype = window.Swiftype || {};
+		  (function() {
+		    Swiftype.key = 'nWUyPMD5mZQ8ngWa7Arf';
+		    Swiftype.inputElement = '#st-search-input';
+		    Swiftype.resultContainingElement = '#st-results-container';
+		    Swiftype.attachElement = '#st-search-input';
+		    Swiftype.renderStyle = "inline";
 
-		<gcse:search></gcse:search>
+		    var script = document.createElement('script');
+		    script.type = 'text/javascript';
+		    script.async = true;
+		    script.src = "//swiftype.com/embed.js";
+		    var entry = document.getElementsByTagName('script')[0];
+		    entry.parentNode.insertBefore(script, entry);
+		  }());
+		</script>
 		
-		
+     <br/>
+
 	<h4>Making Efficient Queries</h4>
 	<dl>
 	  <dt><b>Simple earch</b></dt>
