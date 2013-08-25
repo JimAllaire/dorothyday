@@ -30,6 +30,14 @@ pandoc --toc --chapters  \
        $ARTICLES \
        -o ../$FILENAME-DorothyDay.pdf
 
+# create epub
+pandoc --toc --chapters  \
+       --toc-depth=2 \
+       --variable title="$TITLE" \
+       --variable author="Dorothy Day" \
+       $ARTICLES \
+       -o ../$FILENAME-DorothyDay.epub
+
 
 
 
