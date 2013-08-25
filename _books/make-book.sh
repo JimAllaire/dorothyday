@@ -26,7 +26,7 @@ pandoc --toc --chapters  \
        --variable documentclass="book" \
        --variable classoption="oneside" \
        --variable geometry:margin=1in \
-       --variable fontsize=11pt \
+       --variable fontsize=12pt \
        $ARTICLES \
        -o ../$FILENAME-DorothyDay.pdf
 
