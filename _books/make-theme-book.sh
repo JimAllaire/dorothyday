@@ -4,8 +4,6 @@
 # get variables
 TITLE=$1
 shift
-FILENAME=$1
-shift
 
 # create temporary versions of articles
 BOOK_TMP_DIR=/tmp/pandoc-make-book
@@ -28,7 +26,7 @@ pandoc --toc --chapters  \
        --variable geometry:margin=1in \
        --variable fontsize=12pt \
        $ARTICLES \
-       -o ../$FILENAME-DorothyDay.pdf
+       -o "../themes/$TITLE (Dorothy Day).pdf"
 
 # create epub
 pandoc --toc --chapters  \
@@ -36,7 +34,7 @@ pandoc --toc --chapters  \
        --variable title="$TITLE" \
        --variable author="Dorothy Day" \
        $ARTICLES \
-       -o ../$FILENAME-DorothyDay.epub
+       -o "../themes/$TITLE (Dorothy Day).epub"
 
 
 
