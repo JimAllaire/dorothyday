@@ -22,23 +22,6 @@ title: Dorothy Day Archive - Search
 		</form> 
 		
 		<div id="st-results-container"></div>
-		<script type="text/javascript">
-		  var Swiftype = window.Swiftype || {};
-		  (function() {
-		    Swiftype.key = 'nWUyPMD5mZQ8ngWa7Arf';
-		    Swiftype.inputElement = '#st-search-input';
-		    Swiftype.resultContainingElement = '#st-results-container';
-		    Swiftype.attachElement = '#st-search-input';
-		    Swiftype.renderStyle = "inline";
-
-		    var script = document.createElement('script');
-		    script.type = 'text/javascript';
-		    script.async = true;
-		    script.src = "//swiftype.com/embed.js";
-		    var entry = document.getElementsByTagName('script')[0];
-		    entry.parentNode.insertBefore(script, entry);
-		  }());
-		</script>
 		
   	<h4>Making Efficient Queries</h4>
 	<dl>
@@ -60,15 +43,7 @@ title: Dorothy Day Archive - Search
 		
 		
 	<div class="span2">
-		<script>
-
-		function doDocIdLookup() {
-			docId = document.getElementById('docId').value;
-			console.log(docId);
-			docUrl = "articles/" + docId + ".html";
-		    window.location = docUrl;
-		}
-		</script>
+	
 		<h3>Direct Lookup</h3>
 		<p> If you know a document's DDLW number, e.g. (DDLW #266), enter 266 in the box and press <b>GO</b>. </p>
 		
@@ -76,6 +51,37 @@ title: Dorothy Day Archive - Search
 		<input type="text" id="docId" size=6 onkeydown="if (event.keyCode==13) document.getElementById('btnDocId').click();"></input>
 		<input type="button" id="btnDocId" value="GO" onClick="doDocIdLookup();"/>
 	</div>
+  
+    <script>
+
+  		function doDocIdLookup() {
+  			docId = document.getElementById('docId').value;
+  			console.log(docId);
+  			docUrl = "articles/" + docId + ".html";
+  		    window.location = docUrl;	
+  		}
+      
+      var customRenderFunction = function(document_type, item) {
+        var index = item['url'].lastIndexOf("/") + 1;
+        var filename = item['url'].substr(index);
+        var stem = filename.substr(0, filename.lastIndexOf('.'));
+        
+        var out = '<h4><a href="' + item['url'] + '" class="st-search-result-link">' + item['title'] + '</a></h4>' +
+                  '<p><span style="color: gray;">' + 'DDLW &#35;' + stem + '&nbsp;&mdash;&nbsp;<a href="' + item['url'] + '" style="color: gray; text-decoration: underline;">' + item['url'] + '</a>' + '</span><br>' + '<small>' + item.highlight.body + '</small></p>'
+        return out;
+      };
+      
+      $(document).ready(function() {
+          $('#st-search-input').swiftypeSearch({
+            resultContainingElement: '#st-results-container',
+            renderFunction: customRenderFunction,
+            engineKey: 'nWUyPMD5mZQ8ngWa7Arf'
+          });
+      });
+      
+		</script>
+    
+  
 </div>
 		
 		
