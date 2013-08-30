@@ -5,6 +5,15 @@
 TITLE=$1
 shift
 
+TITLE_NOSPACES=`echo "$TITLE" | sed 's/ //g'`
+
+# include introduction if it's available
+INTRO=$TITLE_NOSPACES.intro.md
+if test -e $INTRO
+then
+  ARTICLES=$INTRO
+fi
+
 # create temporary versions of articles
 BOOK_TMP_DIR=/tmp/pandoc-make-book
 rm -rf $BOOK_TMP_DIR
@@ -14,6 +23,9 @@ do
    pandoc --template=templates/chapter.md ../_source/$ARTICLE.md -o $BOOK_TMP_DIR/$ARTICLE.md
    ARTICLES="$ARTICLES $BOOK_TMP_DIR/$ARTICLE.md"
 done
+
+# add footer
+ARTICLES="$ARTICLES theme-footer.md"
 
 # create pdf
 pandoc --toc --chapters  \
