@@ -6,7 +6,7 @@
 #./make-theme-book.sh "On Peter Maurin" 256 151 148 914 152 155 176 495
 #./make-theme-book.sh "On Hospitality" 435 308 358 416 189
 #./make-theme-book.sh "On Aims and Purposes" 12 266 182 919 155 456 158 170 177 529
-./make-theme-book.sh "On Poverty" 633 560
+./make-theme-book.sh "On Poverty" 633 560 223 150 468 230 641 644 172 647 774 812 838 
 
 
 
