@@ -14,11 +14,19 @@ Poverty is not a simple notion for Dorothy but encompasses a certain taxonomy  o
 *	There is involuntary and voluntary poverty
 *	Voluntary  poverty may be a natural virtue or may be Holy Poverty
 
-Responsibility for poverty may fall to the State, the Church, or to me. Also, the causes of poverty are numerous.
+The causes of poverty are numerous, some individual or personal, others rooted in the structures of society and the economic order.
+
+Responsibility for aleviating poverty may fall to the State, the Church, or to me. Concretely, the works of mercy
 
 Dorothy's views on poverty did not go unchallenged, they were judged to be both unrealistic and self-serving.
 
-The articles selected here are a sample of  her views. At times she will clearly express her convictions, other times she will simply describe a concrete situation, letting the reader draw the conclusion applicable to their life.
+The articles selected here are a sample of  her views. At times she will clearly express her convictions, other times she will simply describe a concrete situation by telling a story, letting the reader draw the conclusion applicable to their life. 
+
+All of Dorothy's writing was meant to be an encouragement to action on behalf of the poor: What needs to be done? What can I do?
+
+
+
+
 
 
 

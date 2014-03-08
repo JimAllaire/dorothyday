@@ -29,7 +29,7 @@ ARTICLES="$ARTICLES theme-footer.md"
 
 # create pdf
 pandoc --toc --chapters  \
-       --toc-depth=2 \
+       --toc-depth=1 \
        --template=templates/book.tex \
        --variable title="$TITLE" \
        --variable author="Dorothy Day" \
