@@ -16,11 +16,11 @@ Poverty is not a simple notion for Dorothy but encompasses a certain taxonomy  o
 
 The causes of poverty are numerous, some individual or personal, others rooted in the structures of society and the economic order.
 
-Responsibility for aleviating poverty may fall to the State, the Church, or to me. Concretely, the works of mercy
+Responsibility for alleviating poverty may fall to the State, the Church, or to me. Concretely, the works of mercy to which all are called. 
 
-Dorothy's views on poverty did not go unchallenged, they were judged to be both unrealistic and self-serving.
+Dorothy's views on poverty did not go unchallenged, they were judged to be both unrealistic and self-serving, Jansenist and communist.
 
-The articles selected here are a sample of  her views. At times she will clearly express her convictions, other times she will simply describe a concrete situation by telling a story, letting the reader draw the conclusion applicable to their life. 
+The articles selected here are a sample of  her views. At times she will clearly express her convictions, other times she will simply describe a concrete situation of squalor or grim destitution by telling a story. Dorothy always invited the reader draw the conclusions applicable to their life. 
 
 All of Dorothy's writing was meant to be an encouragement to action on behalf of the poor: What needs to be done? What can I do?
 
