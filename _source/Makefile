@@ -25,7 +25,7 @@ $(ARTICLES_DIR)/%.html: %.md
 	       $< -o $@
 
 $(ARTICLES_DIR)/%.pdf: %.md
-	pandoc $< -o $@
+	pandoc $< --variable geometry:margin=1in --variable fontsize=12pt -o $@
 
 $(ARTICLES_DIR)/%.docx: %.md
 	pandoc $< -o $@
