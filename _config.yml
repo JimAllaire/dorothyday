@@ -7,6 +7,8 @@ baseurl: /
 auto: true
 server: true
 
+markdown: kramdown
+
 exclude: Makefile
 
 
